@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="charcoalBlack">#CDC9C9 </color>
+    <color name="tab_background_selected">#656363</color>
+    <color name="tab_background_unselected">#3F3D3D</color>
+    <color name="original_tab_selected">#3f3d3d</color>
+    <color name="original_tab_unselected">#272525</color>
+    <color name="hero_tab">#ba4C4A4A</color>
+</resources>

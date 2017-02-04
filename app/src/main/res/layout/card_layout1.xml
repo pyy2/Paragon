@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="layout.card_gallery">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/charcoalBlack"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/start2"
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/example">
+
+            </TextView>
+            <!--<ImageView-->
+                <!--android:layout_width="133dp"-->
+                <!--android:layout_height="140dp"-->
+                <!--android:layout_weight=".33"-->
+
+                <!--android:src="@drawable/megavolt"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:id="@+id/imageView2"/>-->
+
+            <!--<ImageView-->
+                <!--android:src="@drawable/offensivemanuevers"-->
+                <!--android:id="@+id/r1c3"-->
+                <!--android:layout_weight=".33"-->
+                <!--android:layout_height="140dp"-->
+                <!--android:layout_width="133dp"-->
+                <!--android:scaleType="centerInside"-->
+
+                <!--android:layout_toRightOf="@+id/imageView2"-->
+                <!--android:layout_toEndOf="@+id/imageView2" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/r1c1"-->
+                <!--android:layout_weight=".33"-->
+                <!--android:layout_width="133dp"-->
+                <!--android:layout_height="140dp"-->
+                <!--android:scaleType="centerInside"-->
+
+                <!--android:layout_toRightOf="@+id/r1c3"-->
+                <!--android:layout_toEndOf="@+id/r1c3" />-->
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

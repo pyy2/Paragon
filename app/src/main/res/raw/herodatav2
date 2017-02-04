@@ -1,0 +1,912 @@
+[
+  {
+    "name": "Countess",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 500,
+            "healthRegen": 1.2,
+            "mana": 280,
+            "manaRegen": 1.3,
+            "attackSpeed": 100,
+            "basicArmor": 8,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 67.43,
+            "healthRegenScale": 0.20714,
+            "manaScale": 68,
+            "manaRegenScale": 0.2714,
+            "basicArmorScale": 1,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Remembers every meal she has ever had; taste, smell, and texture.",
+      "None have ever traveled to her lands, yet none doubt her claim to nobility.",
+      "Seeks that which is greater than herself, and believes she has found it."
+    ]
+  },
+  {
+    "name": "Aurora",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 550,
+            "healthRegen": 2,
+            "mana": 200,
+            "manaRegen": 0.7,
+            "attackSpeed": 100,
+            "basicArmor": 14,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 74.2,
+            "healthRegenScale": 0.3,
+            "manaScale": 36,
+            "manaRegenScale": 0.928,
+            "basicArmorScale": 31.5,
+            "abilityArmorScale": 30.5
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Her right arm doesn't belong to her.",
+      "Insists that each visitor drink tea, exchange gossip and then fight her.",
+      "Once capsized the High Sorcerer's pleasure barge to see if he could swim."
+    ]
+  },
+  {
+    "name": "Gideon",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 500,
+            "healthRegen": 1.2,
+            "mana": 280,
+            "manaRegen": 1.3,
+            "attackSpeed": 100,
+            "basicArmor": 9.2,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 67.43,
+            "healthRegenScale": 0.20714,
+            "manaScale": 68,
+            "manaRegenScale": 0.2714,
+            "basicArmorScale": 1.15,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "On his sixth birthday, witnessed the death of a star. Fell in love.",
+      "Dekker suspects \"Gideon\" is not his true name.",
+      "Believes limits are for the meek."
+    ]
+  },
+  {
+    "name": "Howitzer",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 500,
+            "healthRegen": 1.2,
+            "mana": 280,
+            "manaRegen": 1.3,
+            "attackSpeed": 100,
+            "basicArmor": 8 ,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 67.43,
+            "healthRegenScale": 0.20714,
+            "manaScale": 68,
+            "manaRegenScale": 0.2714,
+            "basicArmorScale": 1,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Charged with destruction, mayhem, and defacing public property.",
+      "Installed a humidor in his mech.",
+      "Published an article on grenades: theory, practice, and aesthetics."
+    ]
+  },
+  {
+    "name": "Lt. Belica",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 500,
+            "healthRegen": 1.2,
+            "mana": 280,
+            "manaRegen": 1.3,
+            "attackSpeed": 100,
+            "basicArmor": 8 ,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 67.43,
+            "healthRegenScale": 0.20714,
+            "manaScale": 68,
+            "manaRegenScale": 0.2714,
+            "basicArmorScale": 1,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Shot eleven times. Keeps five rounds in her desk, the other six in her bones.",
+      "Has a bounty on her head from the Ying Mei Cartel.",
+      "Personal life is a flaming mess."
+    ]
+  },
+  {
+    "name": "Iggy & Scorch",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 500,
+            "healthRegen": 1.2,
+            "mana": 280,
+            "manaRegen": 1.3,
+            "attackSpeed": 100,
+            "basicArmor": 8 ,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 67.43,
+            "healthRegenScale": 0.20714,
+            "manaScale": 68,
+            "manaRegenScale": 0.2714,
+            "basicArmorScale": 1,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Scorch once ate all the molotovs, passed out, and burned down an orphanage.",
+      "Both were cast-out as runts. Suits them just fine.",
+      "Iggy thinks he's a dinosaur. Scorch disagrees."
+    ]
+  },
+  {
+    "name": "The Fey",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 500,
+            "healthRegen": 1.2,
+            "mana": 280,
+            "manaRegen": 1.3,
+            "attackSpeed": 100,
+            "basicArmor": 9.2 ,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 67.43,
+            "healthRegenScale": 0.20714,
+            "manaScale": 68,
+            "manaRegenScale": 0.2714,
+            "basicArmorScale": 1.15,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Believes that the purpose of all living things is to die, and feed the land.",
+      "More curious than the other Fey, thus she was chosen.",
+      "Loves all her \"children\"."
+    ]
+  },
+  {
+    "name": "Gadget",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 500,
+            "healthRegen": 1.2,
+            "mana": 280,
+            "manaRegen": 1.3,
+            "attackSpeed": 100,
+            "basicArmor": 8,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 67.43,
+            "healthRegenScale": 0.20714,
+            "manaScale": 68,
+            "manaRegenScale": 0.2714,
+            "basicArmorScale": 1,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Enjoys the company of machines more than people. Undecided about androids.",
+      "Joined the Mechanica at fifteen. Left it at sixteen.",
+      "Has a not-so-secret gambling addiction."
+    ]
+  },
+  {
+    "name": "Dekker",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 500,
+            "healthRegen": 1.2,
+            "mana": 280,
+            "manaRegen": 1.3,
+            "attackSpeed": 100,
+            "basicArmor": 8,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 67.43,
+            "healthRegenScale": 0.20714,
+            "manaScale": 68,
+            "manaRegenScale": 0.2714,
+            "basicArmorScale": 1,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Holds the record for most entries in the Exotic Locales Codex.",
+      "Respected by all, feared by many, and loved by two.",
+      "Has a secret obsession with low budget holovids."
+    ]
+  },
+  {
+    "name": "Muriel",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 500,
+            "healthRegen": 1.2,
+            "mana": 280,
+            "manaRegen": 1.3,
+            "attackSpeed": 100,
+            "basicArmor": 8,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 67.43,
+            "healthRegenScale": 0.20714,
+            "manaScale": 68,
+            "manaRegenScale": 0.2714,
+            "basicArmorScale": 1,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Has had many jokes explained to her, and has diligently noted that they were humorous.",
+      "Long ago requested that her personality module be rewritten, but no longer knows why.",
+      "Can see infrared and ultraviolet, but not full human spectrum."
+    ]
+  },
+  {
+    "name": "Narbash",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 500,
+            "healthRegen": 1.2,
+            "mana": 280,
+            "manaRegen": 1.3,
+            "attackSpeed": 100,
+            "basicArmor": 8,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 67.43,
+            "healthRegenScale": 0.20714,
+            "manaScale": 68,
+            "manaRegenScale": 0.2714,
+            "basicArmorScale": 1,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "At least 600 people believe they are his best friend. They may all be correct.",
+      "Once turned an actual battle into a dance battle through inspired drumming.",
+      "Ancient sculptures have been found that look just like him."
+    ]
+  },
+  {
+    "name": "Countess",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 500,
+            "healthRegen": 1.2,
+            "mana": 280,
+            "manaRegen": 1.3,
+            "attackSpeed": 100,
+            "basicArmor": 8,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 67.43,
+            "healthRegenScale": 0.20714,
+            "manaScale": 68,
+            "manaRegenScale": 0.2714,
+            "basicArmorScale": 1,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "None have ever traveled to her lands, yet none doubt her claim to nobility.",
+      "Seeks that which is greater than herself, and believes she has found it.",
+      "Remembers every meal she has ever had; taste, smell, and texture."
+    ]
+  },
+  {
+    "name": "Kallari",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 450,
+            "healthRegen": 2,
+            "mana": 280,
+            "manaRegen": 0.7,
+            "attackSpeed": 100,
+            "basicArmor": 14,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 60.7,
+            "healthRegenScale": 0.3,
+            "manaScale": 36,
+            "manaRegenScale": 0.0928,
+            "basicArmorScale": 1.25,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Some believe she kills for pleasure.",
+      "Some believe she kills because she must.",
+      "Some believe neither of these is true."
+    ]
+  },
+  {
+    "name": "Khaimera",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 585,
+            "healthRegen": 2,
+            "mana": 200,
+            "manaRegen": 0.7,
+            "attackSpeed": 100,
+            "basicArmor": 14,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 79,
+            "healthRegenScale": 0.3,
+            "manaScale": 36,
+            "manaRegenScale": 0.0928,
+            "basicArmorScale": 1.25,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Dwelled in the jungle, alone, since the age of thirteen.",
+      "Has been worshipped as a vengeful nature god.",
+      "Does not speak. Unless he must."
+    ]
+  },
+  {
+    "name": "TwinBlast",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 475,
+            "healthRegen": 1.2,
+            "mana": 225,
+            "manaRegen": 0.8,
+            "attackSpeed": 100,
+            "basicArmor": 18,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 64.03,
+            "healthRegenScale": 0.20714,
+            "manaScale": 48,
+            "manaRegenScale": 0.1214,
+            "basicArmorScale": 2,
+            "abilityArmorScale": 0.75,
+            "attackSpeedScale": 0
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Denies any affiliation with the Ying Mei Cartel, but drinks on their tab.",
+      "Has talked his way out of at least five executions.",
+      "Is pretty sure that he's a father."
+    ]
+  },
+  {
+    "name": "Murdock",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 475,
+            "healthRegen": 1.2,
+            "mana": 225,
+            "manaRegen": 0.8,
+            "attackSpeed": 100,
+            "basicArmor": 18,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 64.03,
+            "healthRegenScale": 0.20714,
+            "manaScale": 48,
+            "manaRegenScale": 0.1214,
+            "basicArmorScale": 2,
+            "abilityArmorScale": 0.75,
+            "attackSpeedScale": 2.8
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Once suspended by Lt. Belica for hiding stun traps in the lavatory.",
+      "Hasn't worked with a partner since the \"incident.\"",
+      "Never mention his wife."
+    ]
+  },
+  {
+    "name": "Sparrow",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 475,
+            "healthRegen": 1.2,
+            "mana": 225,
+            "manaRegen": 0.8,
+            "attackSpeed": 100,
+            "basicArmor": 18,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 64.03,
+            "healthRegenScale": 0.20714,
+            "manaScale": 48,
+            "manaRegenScale": 0.1214,
+            "basicArmorScale": 2.8,
+            "abilityArmorScale": 0.75,
+            "attackSpeedScale": 2.8
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "As a child, practiced the bow until her fingers bled, then practiced some more.",
+      "Loves the hunt more than the kill.",
+      "Has been imprisoned many times."
+    ]
+  },
+  {
+    "name": "Grim.exe",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 475,
+            "healthRegen": 1.2,
+            "mana": 225,
+            "manaRegen": 0.8,
+            "attackSpeed": 100,
+            "basicArmor": 18,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 64.03,
+            "healthRegenScale": 0.20714,
+            "manaScale": 48,
+            "manaRegenScale": 0.1214,
+            "basicArmorScale": 2.8,
+            "abilityArmorScale": 0.75,
+            "attackSpeedScale": 2.8
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Grim won EXE in a crooked game of Bone Dice. Instructions were not included.",
+      "Since he acquired EXE, all of Grim's debts have been forgiven.",
+      "EXE is able to extrapolate 73.2% of Grim's speech."
+    ]
+  },
+  {
+    "name": "Riktor",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 585,
+            "healthRegen": 2,
+            "mana": 200,
+            "manaRegen": 0.7,
+            "attackSpeed": 100,
+            "basicArmor": 14,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 79,
+            "healthRegenScale": 0.3,
+            "manaScale": 36,
+            "manaRegenScale": 0.0928,
+            "basicArmorScale": 1.25,
+            "abilityArmorScale": 0.75,
+            "attackSpeedScale": 0
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Inmates learn to listen for the sound of the chains.",
+      "Enjoys soft music during long torture sessions.",
+      "Has a true passion for the detention industry."
+    ]
+  },
+  {
+    "name": "Steel",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 585,
+            "healthRegen": 2,
+            "mana": 200,
+            "manaRegen": 0.7,
+            "attackSpeed": 100,
+            "basicArmor": 14,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 79,
+            "healthRegenScale": 0.3,
+            "manaScale": 36,
+            "manaRegenScale": 0.0928,
+            "basicArmorScale": 1.25,
+            "abilityArmorScale": 0.75,
+            "attackSpeedScale": 0
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Inmates learn to listen for the sound of the chains.",
+      "Enjoys soft music during long torture sessions.",
+      "Has a true passion for the detention industry."
+    ]
+  },
+  {
+    "name": "Rampage",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 550,
+            "healthRegen": 2,
+            "mana": 200,
+            "manaRegen": 0.7,
+            "attackSpeed": 100,
+            "basicArmor": 14,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 74.2,
+            "healthRegenScale": 0.3,
+            "manaScale": 36,
+            "manaRegenScale": 0.0928,
+            "basicArmorScale": 1.25,
+            "abilityArmorScale": 0.75,
+            "attackSpeedScale": 0
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Enjoys camping in the wilderness.",
+      "A gifted storyteller.",
+      "Prefers a raw diet."
+    ]
+  },
+  {
+    "name": "Crunch",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 585,
+            "healthRegen": 2,
+            "mana": 200,
+            "manaRegen": 0.7,
+            "attackSpeed": 100,
+            "basicArmor": 14,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 79,
+            "healthRegenScale": 0.3,
+            "manaScale": 36,
+            "manaRegenScale": 0.0928,
+            "basicArmorScale": 1.25,
+            "abilityArmorScale": 0.75,
+            "attackSpeedScale": 0
+
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Shots to his harddrive have corrupted most memories. Not sure which ones are real.",
+      "Once KO'd a Gorzop, a Demonox, and a Giga-Tanker with a single uppercut.",
+      "Feigns inactivity when being graffitied. Likes the attention."
+    ]
+  },
+  {
+    "name": "Kwang",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 585,
+            "healthRegen": 2,
+            "mana": 200,
+            "manaRegen": 0.7,
+            "attackSpeed": 100,
+            "basicArmor": 14,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 79,
+            "healthRegenScale": 0.3,
+            "manaScale": 36,
+            "manaRegenScale": 0.0928,
+            "basicArmorScale": 1.25,
+            "abilityArmorScale": 0.75,
+            "attackSpeedScale": 0.6
+
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Never utters the name of his sword in the hearing of others.",
+      "Believes in tradition and honoring one's parents.",
+      "Completely trusting, and often penniless."
+    ]
+  },
+  {
+    "name": "Greystone",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 550,
+            "healthRegen": 2,
+            "mana": 200,
+            "manaRegen": 0.7,
+            "attackSpeed": 100,
+            "basicArmor": 14,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 74.2,
+            "healthRegenScale": 0.3,
+            "manaScale": 36,
+            "manaRegenScale": 0.0928,
+            "basicArmorScale": 1.25,
+            "abilityArmorScale": 0.75,
+            "attackSpeedScale": 0.6
+
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Keeps a lock of black hair in his boot, but no one knows why.",
+      "Ran from every fight, until he lost it all, and stood up.",
+      "Has imprisoned Sparrow many times."
+    ]
+  },
+  {
+    "name": "Sevarog",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 485.6,
+            "healthRegen": 2,
+            "mana": 200,
+            "manaRegen": 0.7,
+            "attackSpeed": 100,
+            "basicArmor": 14,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 65.57,
+            "healthRegenScale": 0.3,
+            "manaScale": 36,
+            "manaRegenScale": 0.0928,
+            "basicArmorScale": 1.25,
+            "abilityArmorScale": 0.75,
+            "attackSpeedScale": 1.4
+
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Looks forward to the signs that herald his end.",
+      "Waits in the dark with timeless patience.",
+      "Does not sleep."
+    ]
+  },
+  {
+    "name": "Grux",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 585,
+            "healthRegen": 2,
+            "mana": 200,
+            "manaRegen": 0.7,
+            "attackSpeed": 100,
+            "basicArmor": 14,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 79,
+            "healthRegenScale": 0.3,
+            "manaScale": 36,
+            "manaRegenScale": 0.0928,
+            "basicArmorScale": 1.25,
+            "abilityArmorScale": 0.75,
+            "attackSpeedScale": 0.6
+
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Has crushed the skull of every challenger in his tribe.",
+      "Still cannot defeat his grandmother in single combat.",
+      "Seeks the forgiveness of his gods."
+    ]
+  },
+  {
+    "name": "Feng Mao",
+    "basicStats": [
+      {
+        "stats": [
+          {
+            "health": 550,
+            "healthRegen": 2,
+            "mana": 200,
+            "manaRegen": 0.7,
+            "attackSpeed": 100,
+            "basicArmor": 14,
+            "abilityArmor": 20
+          }
+        ],
+        "scaling": [
+          {
+            "healthscale": 79,
+            "healthRegenScale": 0.3,
+            "manaScale": 36,
+            "manaRegenScale": 0.0928,
+            "basicArmorScale": 1.25,
+            "attackSpeedScale": 1.25,
+            "abilityArmorScale": 0.75
+          }
+        ]
+      }
+    ],
+    "lore": [
+      "Shots to his harddrive have corrupted most memories. Not sure which ones are real.",
+      "Once KO'd a Gorzop, a Demonox, and a Giga-Tanker with a single uppercut.",
+      "Feigns inactivity when being graffitied. Likes the attention."
+    ]
+  }
+]
+

@@ -1,9 +1,6 @@
 
-package RawDataPOJO;
+package rawdataPOJO;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -11,38 +8,68 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "stats",
-    "scaling"
+    "name",
+        "stats",
+        "scaling",
+    "lore"
 })
-public class BasicStat {
+public class HeroInfo {
 
+    @JsonProperty("name")
+    private String name;
     @JsonProperty("stats")
-    private List<Stat> stats = null;
+    private Stats stats;
     @JsonProperty("scaling")
-    private List<Scaling> scaling = null;
+    private Scaling scaling;
+    @JsonProperty("lore")
+    private List<String> lore = null;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new HashMap<>();
+
+    @JsonProperty("name")
+    public String getName() {
+        return name;
+    }
+
+    @JsonProperty("name")
+    public void setName(String name) {
+        this.name = name;
+    }
 
     @JsonProperty("stats")
-    public List<Stat> getStats() {
+    public Stats getStats() {
         return stats;
     }
 
     @JsonProperty("stats")
-    public void setStats(List<Stat> stats) {
+    public void setStats(Stats stats) {
         this.stats = stats;
     }
 
     @JsonProperty("scaling")
-    public List<Scaling> getScaling() {
+    public Scaling getScaling() {
         return scaling;
     }
 
     @JsonProperty("scaling")
-    public void setScaling(List<Scaling> scaling) {
+    public void setScaling(Scaling scaling) {
         this.scaling = scaling;
+    }
+
+    @JsonProperty("lore")
+    public List<String> getLore() {
+        return lore;
+    }
+
+    @JsonProperty("lore")
+    public void setLore(List<String> lore) {
+        this.lore = lore;
     }
 
     @JsonAnyGetter

@@ -3,21 +3,12 @@ package heroes;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.RecyclerView;
-import android.util.DisplayMetrics;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,8 +16,6 @@ import com.makeramen.roundedimageview.RoundedImageView;
 import com.paragon.paulyu.myapplication.R;
 import com.squareup.picasso.Picasso;
 
-import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 import heroPOJO.HeroData;
@@ -34,16 +23,43 @@ import heroPOJO.HeroData;
 /**
  * Created by Paul Yu on 11/16/2016.
  */
-public class HERO_Adapter extends RecyclerView.Adapter<HERO_Adapter.HERO_holder>{
+class HERO_Adapter extends RecyclerView.Adapter<HERO_Adapter.HERO_holder> {
     private static List<HeroData> heroes;
     private Context context;
-    HeroData item;
+    private HeroData item;
+
+    HERO_Adapter(Context context, List<HeroData> heroes) {
+        super();
+
+        this.context = context;
+        HERO_Adapter.heroes = heroes;
+
+    }
+
+    @Override
+    public HERO_holder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(context)
+                .inflate(R.layout.hero_item, parent, false);
+
+        return new HERO_holder(itemView);
+    }
+
+    @Override
+    public void onBindViewHolder(final HERO_holder holder, int position) {
+        Context ctx = holder.itemView.getContext();
+        holder.bindModel(item, heroes, position, ctx);
+    }
+
+    @Override
+    public int getItemCount() {
+        return heroes.size();
+    }
 
     /**
      * Hero data model. Android id's from R.layout.hero_item is matched with parsed JSON data from
      * Jackson.
      */
-    public class HERO_holder extends RecyclerView.ViewHolder
+    class HERO_holder extends RecyclerView.ViewHolder
         implements  View.OnClickListener    {
 
         RoundedImageView thumbnail;
@@ -53,13 +69,10 @@ public class HERO_Adapter extends RecyclerView.Adapter<HERO_Adapter.HERO_holder>
         ImageView setAffinity2;
         TextView trait;
         boolean click = true;
-        View popupView;
         HeroData item;
-        FrameLayout frameLayout;
         LayoutInflater layoutInflater;
-        ViewGroup container;
 
-        public HERO_holder(View itemView) {
+        HERO_holder(View itemView) {
 
             super(itemView);
 
@@ -72,11 +85,8 @@ public class HERO_Adapter extends RecyclerView.Adapter<HERO_Adapter.HERO_holder>
             setAffinity = (ImageView) itemView.findViewById(R.id.affinity);
             setAffinity2 = (ImageView) itemView.findViewById(R.id.affinity2);
             trait = (TextView) itemView.findViewById(R.id.hero_trait);
-            popupView = LayoutInflater.from(itemView.getContext()).inflate(R.layout.hero_intro, null);
-            frameLayout = (FrameLayout) itemView.findViewById(R.id.hero_container);
             layoutInflater= (LayoutInflater)itemView.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             itemView.setOnClickListener(this);
-            container = (ViewGroup)itemView.findViewById(R.id.hero_container);
 
         }
 
@@ -88,12 +98,11 @@ public class HERO_Adapter extends RecyclerView.Adapter<HERO_Adapter.HERO_holder>
         public void onClick(View v) {
 
             Toast.makeText(v.getContext(),
-                    String.format("Clicked on position %d", getAdapterPosition()),
+                    String.format("Clicked on position %d", getAdapterPosition()), // Use String.format(Locale, ...) instead, source of bugs
                     Toast.LENGTH_SHORT).show();
 
             // if space outside the window is clicked, window is closed
             if(click)   {
-                bindModel2(item, heroes, getAdapterPosition(), v.getContext());
                 Intent intent = new Intent(v.getContext(), HERO_Profile.class);
 
                 intent.putExtra("title", item.getName());
@@ -122,15 +131,11 @@ public class HERO_Adapter extends RecyclerView.Adapter<HERO_Adapter.HERO_holder>
             }
         }
 
-        private void bindModel2(HeroData item, List<HeroData> heroes, int adapterPosition, Context context) {
-            bindModel(item, heroes, adapterPosition, context);
-        }
-
-        public void bindModel(HeroData item, List<HeroData> heroes, int position, Context ctx) {
+        void bindModel(HeroData item, List<HeroData> heroes, int position, Context ctx) {
 
             item = heroes.get(position);
-
             this.item = item;
+
             title.setText(item.getName());
 
             String imageUrl = item.getImages().getIcon();
@@ -157,7 +162,7 @@ public class HERO_Adapter extends RecyclerView.Adapter<HERO_Adapter.HERO_holder>
         }
 
         private void getAffinity(ImageView s, String a) {
-            switch (a.toString()) {
+            switch (a) {
                 case "Fury":
                     s.setBackgroundResource(R.drawable.furyicon);
                     break;
@@ -177,34 +182,6 @@ public class HERO_Adapter extends RecyclerView.Adapter<HERO_Adapter.HERO_holder>
                     break;
             }
         }
-    }
-
-
-    public HERO_Adapter(Context context, List<HeroData> heroes) {
-        super();
-
-        this.context = context;
-        this.heroes = heroes;
-
-    }
-
-    @Override
-    public HERO_holder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(context)
-                .inflate(R.layout.hero_item, parent, false);
-
-        return new HERO_holder(itemView);
-    }
-
-    @Override
-    public void onBindViewHolder(final HERO_holder holder, int position) {
-        Context ctx = holder.itemView.getContext();
-        holder.bindModel(item, heroes, position, ctx);
-    }
-
-    @Override
-    public int getItemCount() {
-        return heroes.size();
     }
 
 }
